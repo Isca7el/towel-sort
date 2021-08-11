@@ -1,8 +1,5 @@
-
-// You should implement your task here.
-
 module.exports = function towelSort (matrix) {
-  var result;
+ 
   
     if (matrix == null){
       return [];
@@ -11,7 +8,6 @@ module.exports = function towelSort (matrix) {
         if (i % 2 == 0) {
           matrix[i] = matrix[i].sort((a, b) => a - b);
         } else {matrix[i] = matrix[i].sort((a, b) => b - a);}
-        result = matrix;
       }
     })
     }
